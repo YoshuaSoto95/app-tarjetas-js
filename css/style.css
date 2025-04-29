@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech+Mono&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    
+    background: url('../img/wallpaper_two.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
-    color: #333;
+    color: #fff;
     text-align: center;
 }
 .card-container {
@@ -14,6 +25,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .card {
     width: 350px;
     height: 220px;
@@ -46,7 +58,7 @@ h1 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(204, 204, 204, 0.281);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +69,13 @@ h1 {
     max-height: 100%;
 }
 .controls {
-    background-color: white;
+    background-color: rgba(51, 51, 51, 0.295);
+    backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 15px rgba(14, 14, 14, 0.664);
     margin-bottom: 20px;
+    color: #fff;
 }
 .form-group {
     margin-bottom: 15px;
@@ -79,21 +93,25 @@ input, select, button {
     box-sizing: border-box;
 }
 button {
-    background-color: #6e8efb;
+    background-color: #5c005fea;
+    box-shadow: 5px 10px 15px rgba(14, 14, 14, 0.664);
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
+    transition: all 0.3s ease;
 }
 button:hover {
-    background-color: #5a7df4;
+    background-color: #c300caea;
 }
 .transactions {
-    background-color: white;
+    background-color: rgba(204, 204, 204, 0.103);
+    backdrop-filter: blur(10px);
+    color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 10px 15px rgba(14, 14, 14, 0.664);
 }
 .transaction-list {
     list-style-type: none;
@@ -205,19 +223,34 @@ button:hover {
 
 /* Estilos predefinidos para tarjetas */
 .card-style-1 {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: url('../cards/btc.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-style-2 {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: url('../cards/eth.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-style-3 {
-    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    background: url('../cards/vet.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-style-4 {
-    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    background: url('../cards/sol.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-style-5 {
-    background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+    background: url('../cards/USDT.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-style-custom {
     background: linear-gradient(135deg, var(--color1), var(--color2));
